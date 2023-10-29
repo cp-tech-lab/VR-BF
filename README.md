@@ -18,7 +18,7 @@ To launch the application:
 Set up your shimmer device to real-time stream physiological signals over a selected Bluetooth port. You must be sure to update the [config.json](./python/config.json) file to let the application know the configured port. Additionally, you can customize other parameters such as the mapping function (scl_d or hfnu), the sampling frequency (fs) and the virtual scenario's updating frequency (fu).
 
 #### 2. Python
-Once you have completed the configuration phase, you can launch the python application by running the [main.py](./python/main.py) file.
+Once you have completed the configuration phase, you can launch the python application by running the [main.py](./python/main.py) file. Be sure to have installed all the packages listed in the [requirements.txt](./python/requirements.txt) file.
 
 #### 3. Unity
 To correctly run the source code, you must design a virtual scenario by starting a [Unity project](https://unity.com/pages/unity-pro-buy-now?utm_source=google&utm_medium=cpc&utm_campaign=cc_dd_upr_emea_emea-t2_en_pu_sem-gg_acq_br-pr_2023-01_brand-et2_cc3022_ev-br_id:71700000105990829&utm_content=cc_dd_upr_emea_pu_sem_gg_ev-br_pros_x_npd_cpc_kw_sd_all_x_x_brand_id:58700008262875240&utm_term=unity&&&&&gad_source=1&gclid=EAIaIQobChMI0fTLwOibggMVDtF3Ch04NgWVEAAYASAAEgIsc_D_BwE&gclsrc=aw.ds).
