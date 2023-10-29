@@ -12,29 +12,27 @@ Anxiety symptoms are important contributors to the global health-related burden.
 
 
 ## Executing the application
-To launch the app application:
+To launch the application:
 
 #### 1. Configuration
-Set up your shimmer device to stream the acquired data over a selected Bluetooth port. You must be sure to update the [config.json](./python/config.json) file to input such port modifying the *port* key. Afterwards, you can select your custom configuration in terms of mapping function (scl_d or hfnu), sampling frequency (fs) and scenario's updating frequency (fu).
+Set up your shimmer device to real-time stream physiological signals over a selected Bluetooth port. You must be sure to update the [config.json](./python/config.json) file to let the application know the configured port. Additionally, you can customize other parameters such as the mapping function (scl_d or hfnu), the sampling frequency (fs) and the virtual scenario's updating frequency (fu).
 
 #### 2. Python
-Once you have completed the configuration phase, you can lauch the python application by running the [main.py](./python/main.py) file.
+Once you have completed the configuration phase, you can launch the python application by running the [main.py](./python/main.py) file.
 
 #### 3. Unity
-A [UnityClient.cs](./unity/UnityClient.cs) file is provided to connect the python application to your Unity scenario. You are free to graphically replicate the virtual environment described in the paper or create another one from scratch. In both cases, to make the application work, you should follow the paper in designing the objects proportion because the constants of the algorithm are tuned to work with a maximum height of thirty meters. 
-To launch the application, you just need to attach the provided .cs file to the objects you want to move and start the Unity project.
+To correctly run the source code, you must design a virtual scenario by starting a [Unity project](https://unity.com/pages/unity-pro-buy-now?utm_source=google&utm_medium=cpc&utm_campaign=cc_dd_upr_emea_emea-t2_en_pu_sem-gg_acq_br-pr_2023-01_brand-et2_cc3022_ev-br_id:71700000105990829&utm_content=cc_dd_upr_emea_pu_sem_gg_ev-br_pros_x_npd_cpc_kw_sd_all_x_x_brand_id:58700008262875240&utm_term=unity&&&&&gad_source=1&gclid=EAIaIQobChMI0fTLwOibggMVDtF3Ch04NgWVEAAYASAAEgIsc_D_BwE&gclsrc=aw.ds).
+You are free to graphically replicate the virtual environment described in the paper or create another one from scratch. The unique constraint to be taken into consideration throughout the designing process is related to the virtual objects dimensions that should follow those described in the paper. In facts, bearing in mind that the maximum reachable height by our virtual element was set to thirty meter, the objects must be scaled to reasonable dimensions.
+Then, to let the python application communicate with your Unity objects and make them fly, you must attach the provided [*C#*](./unity/UnityClient.cs) to them. Now, you can run your Unity project.
+
 
 ## Reference
-If you use this code or data, please cite the paper:
+If you use this code or data, please cite the paper.
 ```
-@inproceedings{baldini2019vrbf,
-author="Baldini, Andrea"
-}
 ```
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
-## Acknowledgment
 
 
