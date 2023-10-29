@@ -15,15 +15,15 @@ Anxiety symptoms are important contributors to the global health-related burden.
 To launch the application:
 
 #### 1. Configuration
-Set up your shimmer device to real-time stream physiological signals over a selected Bluetooth port. You must be sure to update the [config.json](./python/config.json) file to let the application know the configured port. Additionally, you can customize other parameters such as the mapping function (scl_d or hfnu), the sampling frequency (fs) and the virtual scenario's updating frequency (fu).
+Set up your shimmer device to real-time stream physiological signals over a selected Bluetooth port. You must be sure to update the [config.json](./python/config.json) file to let the application know the configured port. Additionally, you can customize other parameters such as the mapping function (scl_d or hfnu), the sampling frequency (fs), and the virtual scenario's updating frequency (fu).
 
 #### 2. Python
-Once you have completed the configuration phase, you can launch the python application by running the [main.py](./python/main.py) file. Be sure to have installed all the packages listed in the [requirements.txt](./python/requirements.txt) file.
+Once you have completed the configuration phase, you can launch the Python application by running the [main.py](./python/main.py) file. Be sure to have installed all the packages listed in the [requirements.txt](./python/requirements.txt) file.
 
 #### 3. Unity
 To correctly run the source code, you must design a virtual scenario by starting a [Unity project](https://unity.com/pages/unity-pro-buy-now?utm_source=google&utm_medium=cpc&utm_campaign=cc_dd_upr_emea_emea-t2_en_pu_sem-gg_acq_br-pr_2023-01_brand-et2_cc3022_ev-br_id:71700000105990829&utm_content=cc_dd_upr_emea_pu_sem_gg_ev-br_pros_x_npd_cpc_kw_sd_all_x_x_brand_id:58700008262875240&utm_term=unity&&&&&gad_source=1&gclid=EAIaIQobChMI0fTLwOibggMVDtF3Ch04NgWVEAAYASAAEgIsc_D_BwE&gclsrc=aw.ds).
-You are free to graphically replicate the virtual environment described in the paper or create another one from scratch. The unique constraint to be taken into consideration throughout the designing process is related to the virtual objects dimensions that should follow those described in the paper. In facts, bearing in mind that the maximum reachable height by our virtual element was set to thirty meter, the objects must be scaled to reasonable dimensions.
-Then, to let the python application communicate with your Unity objects and make them fly, you must attach the provided [*C#*](./unity/UnityClient.cs) to them. Now, you can run your Unity project.
+You can graphically replicate the virtual environment described in the paper or create another one from scratch. The unique constraint to be taken into consideration throughout the designing process is related to the virtual object dimensions that should follow those described in the paper. In fact, bearing in mind that the maximum reachable height by our virtual element was set to thirty meters, the objects must be scaled to reasonable dimensions.
+Then, to let the Python application communicate with your Unity objects and make them fly, you must attach the provided [*C#*](./unity/UnityClient.cs) to them. Now, you can run your Unity project.
 
 
 ## Reference
