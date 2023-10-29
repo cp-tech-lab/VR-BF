@@ -1,0 +1,8 @@
+{
+    "mapping": "scl_d",
+    "port": "COM9",
+    "fs": 50,
+    "fu": 1,
+    "UnityAppHost": "127.0.0.1",
+    "UnityAppPort": 25001
+}
